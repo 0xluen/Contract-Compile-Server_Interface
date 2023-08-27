@@ -56,7 +56,7 @@ function App() {
    
   const compile =async ()=>{
     
-    const res = await axios.get("https://compile.rapidrpc.com/compile?code="+btoa(contract))
+    const res = await axios.get("http://localhost:3000/compile?code="+btoa(contract))
     setABI(JSON.stringify(res.data.abi) || null) 
     setByteCode(res.data.bytecode || null)
 
