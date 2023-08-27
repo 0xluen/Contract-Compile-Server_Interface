@@ -37,7 +37,7 @@ app.get('/compile', (req, res) => {
       const artifactsPath = path.join(__dirname, 'artifacts/contracts');
       const compiledOutput = require(path.join(artifactsPath, randomFilename, `${contractName}.json`));
       
-      console.log(compiledOutput)
+      console.log(contractName + " compile success...")
       const response = {
         bytecode: compiledOutput.bytecode,
         abi: compiledOutput.abi
