@@ -1,50 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/rootx/GitHub/Contract-Compile-Server/contracts/hc8aj3.sol": {
-      "lastModificationDate": 1693154411800,
-      "contentHash": "2fbf3581dd10f4d712502827c188d255",
-      "sourceName": "contracts/hc8aj3.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
-        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
-        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Snapshot.sol",
-        "@openzeppelin/contracts/access/Ownable.sol",
-        "@openzeppelin/contracts/security/Pausable.sol",
-        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol",
-        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol",
-        "@openzeppelin/contracts/token/ERC20/extensions/ERC20FlashMint.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.9"
-      ],
-      "artifacts": [
-        "MyToken"
-      ]
-    },
     "/home/rootx/GitHub/Contract-Compile-Server/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
       "lastModificationDate": 1693154229153,
       "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
@@ -1075,6 +1031,45 @@
       ],
       "artifacts": [
         "IERC3156FlashLender"
+      ]
+    },
+    "/home/rootx/GitHub/Contract-Compile-Server/contracts/ppl1e9.sol": {
+      "lastModificationDate": 1693163858105,
+      "contentHash": "1be1c14a4a816a4a8c1341a51793c24e",
+      "sourceName": "contracts/ppl1e9.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/security/Pausable.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MyToken"
       ]
     }
   }

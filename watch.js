@@ -2,11 +2,15 @@ const express = require('express');
 const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-
 const app = express();
-const PORT = 3000;
+const cors = require('cors'); 
+
+const PORT = 3008;
+
+app.use(cors());
 
 app.get('/compile', (req, res) => {
+
     const contractCodeBase64 = req.query.code;
     if (!contractCodeBase64) {
       res.status(400).json({ error: 'Contract code not provided' });
