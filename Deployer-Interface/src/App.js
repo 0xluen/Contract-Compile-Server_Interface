@@ -62,6 +62,16 @@ function App() {
 
   }
 
+  const handleNameChange = (e) => {
+    const newValue = e.target.value.replace(/\s/g, '');
+    setTokenName(newValue);
+};
+}
+
+const handleSymbolChange = (e) => {
+  const newValue = e.target.value.replace(/\s/g, '');
+  setSymbol(newValue);
+};
  async function deploy() {
     // Kullanıcının MetaMask hesabını kullanarak işlem yapabilmesi için izin iste
     await window.ethereum.enable();
@@ -136,12 +146,12 @@ function App() {
       <form>
         <label>
           Token Name:
-          <input type="text" name="TokenName" value={TokenName} onChange={handleInputChange} />
+          <input type="text" name="TokenName" value={TokenName} onChange={(e)=>handleNameChange(e)} />
         </label>
         <br />
         <label>
           Symbol:
-          <input type="text" name="Symbol" value={Symbol} onChange={handleInputChange} />
+          <input type="text" name="Symbol" value={Symbol} onChange={(e)=>handleSymbolChange(e)} />
         </label>
         <br />
         <label>
